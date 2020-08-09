@@ -1,6 +1,6 @@
 const { webkit } = require("playwright");
-const fs = require("fs");
-const myArgs = process.argv.slice(2);
+// const fs = require("fs");
+// const myArgs = process.argv.slice(2);
 
 (async () => {
   const browser = await webkit.launch();
@@ -13,6 +13,6 @@ const myArgs = process.argv.slice(2);
     route.continue();
   });
 
-  await page.goto(myArgs[0]);
+  await page.goto("https://google.com");
   await browser.close();
 })();
