@@ -4,9 +4,6 @@
   "main": "main.js",
   "license": "MIT",
   "bin": "./main.js",
-  "scripts": {
-    "start": "node main.js"
-  },
   "devDependencies": {
     "playwright": "^1.3.0"
   }
