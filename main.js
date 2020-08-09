@@ -1,9 +1,10 @@
-const { webkit } = require("playwright");
+#!/usr/bin/env node
+const { firefox } = require("playwright");
 const fs = require("fs");
 const myArgs = process.argv.slice(2);
 
 (async () => {
-  const browser = await webkit.launch();
+  const browser = await firefox.launch();
   const context = await browser.newContext();
   const page = await context.newPage();
 
